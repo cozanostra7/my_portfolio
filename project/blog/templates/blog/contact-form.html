@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h3> Send me a message! </h3>
+
+<form class="form" action="https://usebasin.com/f/c5589e8160f1" method = "POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Send </button>
+
+</form>
+
+<h1> Other links</h1>
+<br>
+
+<h4>Muminov.b0509@gmail.com</h4>
+<a href="https://github.com/cozanostra7" class="btn btn--sub btn--lg">
+    GitHub </a>
+
+<a href="https://www.linkedin.com/in/bekhzod-muminov-756a75172/" class="btn btn--sub btn--lg">
+    LinkedIn </a>
+
+
+
+
+{% endblock content %}
